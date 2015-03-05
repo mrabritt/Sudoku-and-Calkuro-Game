@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_09" class="java.beans.XMLDecoder">
+ <object class="com.horstmann.violet.ClassDiagramGraph">
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode0">
+    <void property="methods">
+     <void property="text">
+      <string>+main(args : String[ ]) : void</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>MainProgram</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double0">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double0">
+       <void class="java.awt.geom.Point2D$Double" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point2D$Double0">
+          <void method="setLocation">
+           <double>63.0</double>
+           <double>30.0</double>
+          </void>
+         </object>
+         <double>30.0</double>
+        </void>
+       </void>
+      </object>
+      <double>63.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode1">
+    <void property="attributes">
+     <void property="text">
+      <string>-userInterface : UI
+-sudokuPuzzleGame : SudokuGame
+-calkuroPuzzleGame : CalkuroGrid
+-file : FileIO
+-cages : CalkuroCage
+-puzzleGrid : int[ ][ ]
+-gameNumber : int
+-gridSize : int
+-row : int
+-col : int
+-value : int
+-lastRow : int
+-lastCol : int
+-lastValue : int
+-fileName : String
+-gameType : String
+-gameDifficulty : String
+-playerName : String
+-finished : boolean
+-solved : boolean
+-madeMove : boolean</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+Controller()
++start(ifNew : boolean) : void
++runGameLoop() : void
++mousePressed(event: MouseEvent) : void
++mouseReleased(event : MouseEvent) : void
++mouseClicked(event : MouseEvent) : void
++mouseEntered(event : MouseEvent) : void
++mouseExited(event : MouseEvent) : void
++actionPerformed(e : ActionEvent) : void
++setFinished(finished : boolean) : void
++setSolved() : void
++makeMove(row : int, col : int, value : int) : void
++undoMove(row : int, col : int) void
++redoMove(row : int, col : int, value : int) : void
++showHint(row : int, col : int, value : int) : void</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>Controller</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double1">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double1">
+       <void class="java.awt.geom.Point2D$Double" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point2D$Double1">
+          <void method="setLocation">
+           <double>16.0</double>
+           <double>137.0</double>
+          </void>
+         </object>
+         <double>137.0</double>
+        </void>
+       </void>
+      </object>
+      <double>16.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode2">
+    <void property="methods">
+     <void property="text">
+      <string>+actionPerformed(event : MouseEvent) : void (Abstract)</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>ActionListener (Abstract)</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double2">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double2">
+       <void class="java.awt.geom.Point2D$Double" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point2D$Double2">
+          <void method="setLocation">
+           <double>178.0</double>
+           <double>794.0</double>
+          </void>
+         </object>
+         <double>794.0</double>
+        </void>
+       </void>
+      </object>
+      <double>178.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode3">
+    <void property="methods">
+     <void property="text">
+      <string>+mousePressed(event : MouseEvent) : void (Abstract)
++mouseReleased(event : MouseEvent) : void (Abstract)
++mouseClicked(event  : MouseEvent) : void (Abstract)
++mouseEntered(event : MouseEvent) : void (Abstract)
++mouseExited(event : MouseEvent) : void (Abstract)</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>MouseListener (Abstract)</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double3">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double3">
+       <void class="java.awt.geom.Point2D$Double" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point2D$Double3">
+          <void method="setLocation">
+           <double>1.0</double>
+           <double>894.0</double>
+          </void>
+         </object>
+         <double>894.0</double>
+        </void>
+       </void>
+      </object>
+      <double>1.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode4">
+    <void property="attributes">
+     <void property="text">
+      <string>-puzzle : SudokuGrid
+-recorder : MovesRecorder
+-solver : MySudokuSolver
+-control : Controller
+-solvingTimer : Timer
+-puzzleGrid : int[ ][ ]
+-hintGrid : int[ ][ ]
+-solverRow : int
+-solverCol : int
+-madeMove : boolean</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+getGrid() : int[ ][ ]
++makePuzzle(grid : int[ ][ ], control : Controller) : int[ ][ ]
++makeMove(row : int, column : int, value : int, redo : boolean, hint : boolean) : int[ ][ ]
++donePuzzle() : boolean
+-solvePuzzle(forHint : boolean) : void
++solvePuzzle() : void
++actionPerformed(e : ActionEvent) : void
++undoLast() : void
++redoLast() : void
++littleHelp(row : int, column : int) : void</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>SudokuGame</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double4">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double4">
+       <void class="java.awt.geom.Point2D$Double" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point2D$Double4">
+          <void method="setLocation">
+           <double>348.0</double>
+           <double>143.0</double>
+          </void>
+         </object>
+         <double>143.0</double>
+        </void>
+       </void>
+      </object>
+      <double>348.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ClassNode" id="ClassNode5">
+    <void property="attributes">
+     <void property="text">
+      <string>-grid : int[ ][ ]
+-hintGrid : int[ ][ ]
+-recorder : MovesRecorder
+-cages : CalkuroCage[ ]
+-control : Controller
+-solvingTimer : Timer
+-solverRow : int
+-solverCol : int</string>
+     </void>
+    </void>
+    <void property="methods">
+     <void property="text">
+      <string>+makePuzzle(grid : int[ ][ ], cages : CalkuroCage[ ], control : Controller, gameDifficulty : String, gameNumber : int) : int[ ][ ]
++getPuzzle() : int[ ][ ]
++checkCage(grid : int[ ][ ], row : int, col : int) : boolean
++makeMove(row : int, column : int, value : int, redo : boolean, hint : boolean) : int[ ][ ]
++duplicateCheck() : boolean
++undoLast() : void
++redoLast() : void
++solvePuzzle() : void
++actionPerformed(e : ActionEvent) : void
++littleHelp(row : int, column : int) : int</string>
+     </void>
+    </void>
+    <void property="name">
+     <void property="text">
+      <string>CalkuroGrid</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double5">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double5">
+       <void class="java.awt.geom.Point2D$Double" method="getField">
+        <string>y</string>
+        <void method="set">
+         <object idref="Point2D$Double5">
+          <void method="setLocation">
+           <double>887.0</double>
+           <double>145.0</double>
+          </void>
+         </object>
+         <double>145.0</double>
+        </void>
+       </void>
+      </object>
+      <double>887.0</double>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
+    </void>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
+    </void>
+    <void property="lineStyle">
+     <object class="com.horstmann.violet.LineStyle" field="DOTTED"/>
+    </void>
+   </object>
+   <object idref="ClassNode1"/>
+   <object idref="ClassNode2"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
+    </void>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
+    </void>
+    <void property="lineStyle">
+     <object class="com.horstmann.violet.LineStyle" field="DOTTED"/>
+    </void>
+   </object>
+   <object idref="ClassNode1"/>
+   <object idref="ClassNode3"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
+    </void>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
+    </void>
+   </object>
+   <object idref="ClassNode0"/>
+   <object idref="ClassNode1"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
+    </void>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
+    </void>
+    <void property="lineStyle">
+     <object class="com.horstmann.violet.LineStyle" field="DOTTED"/>
+    </void>
+   </object>
+   <object idref="ClassNode4"/>
+   <object idref="ClassNode2"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
+    </void>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
+    </void>
+   </object>
+   <object idref="ClassNode1"/>
+   <object idref="ClassNode4"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
+    </void>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
+    </void>
+   </object>
+   <object idref="ClassNode4"/>
+   <object idref="ClassNode1"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="VHV"/>
+    </void>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
+    </void>
+    <void property="lineStyle">
+     <object class="com.horstmann.violet.LineStyle" field="DOTTED"/>
+    </void>
+   </object>
+   <object idref="ClassNode5"/>
+   <object idref="ClassNode2"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.ClassRelationshipEdge">
+    <void property="bentStyle">
+     <object class="com.horstmann.violet.BentStyle" field="HVH"/>
+    </void>
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="V"/>
+    </void>
+   </object>
+   <object idref="ClassNode5"/>
+   <object idref="ClassNode1"/>
+  </void>
+ </object>
+</java>
